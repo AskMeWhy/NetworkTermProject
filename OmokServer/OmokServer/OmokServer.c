@@ -14,7 +14,7 @@ int main(){
 	SOCKET listen_sock, connect_sock;
 	SOCKADDR_IN listen_addr, connect_addr;
 	int sockaddr_in_size;
-	int socket_port = 1;
+	int socket_port = 5555;
 	char message[100];
 
 	// 윈도우 소켓 버전 2.2

@@ -17,11 +17,12 @@ void omok_opening(char *nickname) {
 	scanf("%s", nickname);
 }
 
-void omok_init() {
+void omok_init(char board[][BOARD_SIZE], coordinate *stone) {
 	int i, j;
 
 	system("cls");
 	// 바둑판 그리기
+	TC(D_YELLOW, BLACK);
 	printf("┌");
 	for (i = 0; i < BOARD_SIZE - 2; i++) {
 		printf("┬");
@@ -39,4 +40,14 @@ void omok_init() {
 		printf("┴");
 	}
 	printf("┘\n");
+	TC(BLACK, WHITE);
+
+	for (i = 0; i < BOARD_SIZE; i++) {
+		for (j = 0; j < BOARD_SIZE; j++) {
+			board[i][j] = EMPTY_STONE;
+		}
+	}
+
+	(*stone).x = BOARD_SIZE / 2;
+	(*stone).y = BOARD_SIZE / 2;
 }

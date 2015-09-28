@@ -79,6 +79,7 @@
   <ItemGroup>
     <ClCompile Include="OmokAlgorithm.c" />
     <ClCompile Include="OmokMain.c" />
+    <ClCompile Include="OmokPlaying.c" />
     <ClCompile Include="OmokServer.c" />
     <ClCompile Include="OmokInit.c" />
     <ClCompile Include="OmokSystem.c" />

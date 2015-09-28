@@ -8,13 +8,16 @@
 	육목 이상(흑의 경우에만 금수)	-4
 	돌을 놓을 수 있을 때			0
 */
-int omok_algotirhm(char **board, coordinate piece) {
-	char stone = piece.stone;
-	char row = piece.row, col = piece.col;
+int omok_algotirhm(char board[][BOARD_SIZE], coordinate stone) {
+	char color = stone.color;
+	char x = stone.x, y = stone.y;
 
-	if (board[row][col] == EMPTY_STONE) {
+	if (board[x][y] == EMPTY_STONE) {
+		return 0;
+
+
 		// 금수인지 확인
-		if (stone == BLACK) {
+		if (color == BLACK_STONE) {
 			
 		}
 		else {

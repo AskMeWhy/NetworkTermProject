@@ -10,8 +10,8 @@ void ErrorHandling(char *Message) {
 }
 
 void omok_socket(WSADATA *wsa_data, SOCKET *connect_sock, SOCKADDR_IN *connect_addr) {
-	char *socket_ip = "123.123.123.123";
-	int socket_port = 1;
+	char *socket_ip = "192.168.200.186";
+	int socket_port = 5555;
 
 	// 윈도우 소켓 버전 2.2
 	if (WSAStartup(MAKEWORD(2, 2), wsa_data) != 0)
