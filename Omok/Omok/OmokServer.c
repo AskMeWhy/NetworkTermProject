@@ -10,7 +10,7 @@ void ErrorHandling(char *Message) {
 }
 
 void omok_socket(WSADATA *wsa_data, SOCKET *connect_sock, SOCKADDR_IN *connect_addr) {
-	char *socket_ip = "192.168.200.186";
+	char *socket_ip = "163.152.126.239";
 	int socket_port = 5555;
 
 	// 윈도우 소켓 버전 2.2

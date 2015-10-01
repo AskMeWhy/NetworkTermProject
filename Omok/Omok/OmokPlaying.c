@@ -55,6 +55,7 @@ void omok_playing(char board[][BOARD_SIZE], coordinate *stone) {
 		TC(BLACK, WHITE);
 	}
 
+	// ½Â¸® ÇßÀ» ¶§
 	if (isstone == 1) {
 
 	}

@@ -14,8 +14,6 @@ int omok_algotirhm(char board[][BOARD_SIZE], coordinate stone) {
 
 	if (board[x][y] == EMPTY_STONE) {
 		return 0;
-
-
 		// 금수인지 확인
 		if (color == BLACK_STONE) {
 			
