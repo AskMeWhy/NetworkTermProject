@@ -46,7 +46,6 @@ typedef struct _coordinate {
 void gotoxy(int x, int y);
 void TC(int back, int font);
 
-void ErrorHandling(char *Message);
 void omok_socket(WSADATA *wsa_data, SOCKET *connect_sock, SOCKADDR_IN *connect_addr);
 
 void omok_opening(char *nickname);

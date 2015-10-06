@@ -11,9 +11,12 @@
 int omok_algotirhm(char board[][BOARD_SIZE], coordinate stone) {
 	char color = stone.color;
 	char x = stone.x, y = stone.y;
+	char up, rightup, right, rightdown, down, leftdown, left, leftup;
 
 	if (board[x][y] == EMPTY_STONE) {
-		return 0;
+		surrounding_stone(board, stone, &up, &rightup, &right, &rightdown, &down, &leftdown, &left, &leftup);
+
+		
 		// 금수인지 확인
 		if (color == BLACK_STONE) {
 			
@@ -30,4 +33,18 @@ int omok_algotirhm(char board[][BOARD_SIZE], coordinate stone) {
 		// 돌이 놓여 있을 때
 		return -1;
 	}
+}
+
+// 주변 돌의 갯수
+void surrounding_stone(char board[][BOARD_SIZE], coordinate stone, char *up, char *rightup, char *right, char *rightdown, char *down, char *leftdown, char *left, char *leftup) {
+	*up = 0;
+	*rightup = 0;
+	*right = 0;
+	*rightdown = 0;
+	*down = 0;
+	*leftdown = 0;
+	*left = 0;
+	*leftup = 0;
+
+	
 }
