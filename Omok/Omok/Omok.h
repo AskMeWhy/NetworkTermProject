@@ -54,3 +54,5 @@ void omok_init(char board[][BOARD_SIZE], coordinate *stone);
 void omok_playing(char board[][BOARD_SIZE], coordinate *stone);
 
 int omok_algotirhm(char board[][BOARD_SIZE], coordinate stone);
+void surrounding_stone(char board[][BOARD_SIZE], coordinate stone, char *up, char *rightup, char *right, char *rightdown, char *down, char *leftdown, char *left, char *leftup);
+int iswin(char color, char up, char rightup, char right, char rightdown, char down, char leftdown, char left, char leftup);

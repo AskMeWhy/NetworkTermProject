@@ -57,6 +57,18 @@ void omok_playing(char board[][BOARD_SIZE], coordinate *stone) {
 
 	// ½Â¸® ÇßÀ» ¶§
 	if (isstone == 1) {
-
+		gotoxy(0, BOARD_SIZE + 1);
+		printf("Black Stone Win!\n");
+		printf("Retry? (y/n)");
+		while (1) {
+			key = _getch();
+			if (key == 'y' || key == 'Y') {
+				omok_init(board, stone);
+				omok_playing(board, stone);
+				break;
+			}
+			else if (key == 'n' || key == 'N')
+				exit(0);
+		}
 	}
 }
